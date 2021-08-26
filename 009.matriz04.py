@@ -1,31 +1,19 @@
-from createdFunctions import create
+from createdFunctions import show
+from createdFunctions import transposedtMatrix
+from createdFunctions import sumMatrix
 
-print("Dada a Matriz A, obtenha a matriz B al que B = A + At")
+print("Dada a Matriz A, obtenha a matriz B tal que B = A + At")
+print()
 A = [[1, -1, 0], [2, 3, 4], [0, 1, -2]]
-print("Matriz A:")
-for i in range(0, 3):
-    for j in range(0, 3):
-        print(f"{A[i][j]:3}", end=" ")
-    print()
+print(f"{'Matriz A:':^22}")
+show(A)
 
-aT = create(3, 3)
-for i in range(0, 3):
-    for j in range(0, 3):
-        aT[i].append(int(A[j][i]))
-print()
-print("Matriz At:")
-for i in range(0, 3):
-    for j in range(0, 3):
-        print(f"{aT[i][j]:3}", end=" ")
-    print()
+aT = transposedtMatrix(A)
+print(f"{'Matriz At:':^22}")
+show(aT)
 
-B = create(3, 3)
-for i in range(0, 3):
-    for j in range(0, 3):
-        B[i].append(int(A[i][j] + aT[i][j]))
-print()
-print("Matriz B:")
-for i in range(0, 3):
-    for j in range(0, 3):
-        print(f"{B[i][j]:3}", end=" ")
-    print()
+B = sumMatrix(A, aT)
+print(f"{'Matriz B:':^22}")
+show(B)
+
+

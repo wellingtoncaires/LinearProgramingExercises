@@ -1,5 +1,5 @@
-def verticalizing(str):
-    for letter in str:
+def verticalizing(phrase):
+    for letter in phrase:
         print(letter)
 
 
