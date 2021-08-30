@@ -4,7 +4,7 @@ from createdFunctions import show
 from createdFunctions import subMatrix
 from createdFunctions import multiplyMatrix
 
-print("Dadas as matrizes A, B e C, clacule (B+At) * Ci - (3 * Bt)")
+print("Dadas as matrizes A, B e C, calcule [A + (B - Ct)] * B)")
 print()
 a = [[2, 1], [-3, 4]]
 b = [[0, -1], [2, 5]]
