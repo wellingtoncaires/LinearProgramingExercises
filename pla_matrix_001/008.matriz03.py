@@ -1,7 +1,7 @@
-from createdFunctions import show
-from createdFunctions import sumMatrix
-from createdFunctions import multiplyMatrix
-from createdFunctions import subMatrix
+from functions.createdFunctions import show
+from functions.createdFunctions import sumMatrix
+from functions.createdFunctions import multiplyMatrix
+from functions.createdFunctions import subMatrix
 
 print("Calcule as matrizes A+B-4*C, conforme as matrizes A, B e C passadas:")
 print()

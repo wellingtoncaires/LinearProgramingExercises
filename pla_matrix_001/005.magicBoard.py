@@ -1,5 +1,5 @@
-from createdFunctions import magicBoard
-from createdFunctions import create
+from functions.createdFunctions import magicBoard
+from functions.createdFunctions import create
 
 
 matrix = create(3, 3)

@@ -1,12 +1,12 @@
-from createdFunctions import transposedtMatrix
-from createdFunctions import create
-from createdFunctions import show
-from createdFunctions import multiplyMatrix
-from createdFunctions import inverseSquared
-from createdFunctions import sumMatrix
-from createdFunctions import subMatrix
+from functions.createdFunctions import transposedtMatrix
+from functions.createdFunctions import create
+from functions.createdFunctions import show
+from functions.createdFunctions import multiplyMatrix
+from functions.createdFunctions import inverseSquared
+from functions.createdFunctions import sumMatrix
+from functions.createdFunctions import subMatrix
 
-print("Dadas as matrizes A, B e C, clacule (B+At) * Ci - (3 * Bt)")
+print("Dada as matrizes A, B e C, clacule (B+At) * Ci - (3 * Bt)")
 print()
 
 a = [[2, 1], [-3, 4]]

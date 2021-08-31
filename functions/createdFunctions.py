@@ -30,9 +30,9 @@ def magicBoard(numbers):
                 jump -= 1
         print()
     for n in range(0, 3):
-        print(f"Soma da {n+1}° linha: {aux[n]}")
+        print(f"Soma da {n + 1}° linha: {aux[n]}")
     for n in range(3, 6):
-        print(f"Soma da {n-2}° Coluna: {aux[n]}")
+        print(f"Soma da {n - 2}° Coluna: {aux[n]}")
     print(f"Soma da diagonal principal: {aux[6]}")
     print(f"Soma da diagonal secundaria: {aux[7]}")
     control = aux[0]
@@ -84,7 +84,7 @@ def matrixCheck(a, b, signal="*"):
             return True
         else:
             return False
-    elif signal == "+":
+    elif signal == "+" or signal == "-":
         if len(a) == len(b) and len(a[0]) == len(b[0]):
             return True
         else:
@@ -109,7 +109,7 @@ def multiplyMatrix(a, b):
         if matrixCheck(a, b, "*"):
             for i in range(0, line):
                 c = 0
-                while (c < line):
+                while c < line:
                     aux = 0
                     for j in range(0, line):
                         aux += a[i][j] * b[j][c]
@@ -139,7 +139,7 @@ def sumMatrix(a, b):
 
 
 def subMatrix(a, b):
-    if matrixCheck(a, b, "+"):
+    if matrixCheck(a, b, "-"):
         line = len(a)
         auxSum = create(line, line)
         for i in range(0, line):
@@ -155,7 +155,7 @@ def show(a):
     column = len(a[0])
     for i in range(0, line):
         for j in range(0, column):
-            print(f"{round(a[i][j],2):5}", end=" ")
+            print(f"{round(a[i][j], 2):5}", end=" ")
         print()
     print()
 
@@ -166,7 +166,7 @@ def identityMatrix(a):
     b = create(lines, columns)
     for i in range(0, lines):
         for j in range(0, columns):
-            if(i == j):
+            if i == j:
                 b[i].append(1)
             else:
                 b[i].append(0)
@@ -180,10 +180,10 @@ def inverseSquared(a):
     secondaryDiagonal = 1
     for i in range(0, lines):
         for j in range(0, lines):
-           if i == j:
+            if i == j:
                 mainDiagonal *= a[i][j]
-           else:
-               secondaryDiagonal *= a[i][j]
+            else:
+                secondaryDiagonal *= a[i][j]
     det = mainDiagonal - secondaryDiagonal
     for i in range(0, lines):
         for j in range(0, lines):

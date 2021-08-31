@@ -1,6 +1,6 @@
-from createdFunctions import show
-from createdFunctions import transposedtMatrix
-from createdFunctions import sumMatrix
+from functions.createdFunctions import show
+from functions.createdFunctions import transposedtMatrix
+from functions.createdFunctions import sumMatrix
 
 print("Dada a Matriz A, obtenha a matriz B tal que B = A + At")
 print()

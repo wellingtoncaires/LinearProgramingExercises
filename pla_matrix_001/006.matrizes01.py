@@ -1,5 +1,5 @@
-from createdFunctions import create
-from createdFunctions import show
+from functions.createdFunctions import create
+from functions.createdFunctions import show
 
 print()
 print("01. Construir matriz A = 3x2, tal que {1, se i = j & i², se i != j}")
@@ -12,5 +12,5 @@ for i in range(0, 3):
         else:
             iaux = i + 1
             matrix[i].append(iaux * iaux)
-print("Resultado")
+print(f"\n{'Resultado':^16}")
 show(matrix)

@@ -1,4 +1,4 @@
-from createdFunctions import cpfValidator
+from functions.createdFunctions import cpfValidator
 
 
 cpf = str(input("Digite seu CPF (XXX.XXX.XXX-XX): "))

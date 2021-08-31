@@ -1,10 +1,10 @@
-from createdFunctions import transposedtMatrix
-from createdFunctions import sumMatrix
-from createdFunctions import show
-from createdFunctions import subMatrix
-from createdFunctions import multiplyMatrix
+from functions.createdFunctions import transposedtMatrix
+from functions.createdFunctions import sumMatrix
+from functions.createdFunctions import show
+from functions.createdFunctions import subMatrix
+from functions.createdFunctions import multiplyMatrix
 
-print("Dadas as matrizes A, B e C, calcule [A + (B - Ct)] * B)")
+print("Dada as matrizes A, B e C, calcule [A + (B - Ct)] * B)")
 print()
 a = [[2, 1], [-3, 4]]
 b = [[0, -1], [2, 5]]
@@ -17,7 +17,7 @@ print(f"{'Matriz C:':^18}")
 show(c)
 
 cT = transposedtMatrix(c)
-print("Resultado 1 (B - Ct))")
+print("Resultado 1 (B - Ct)")
 aux = subMatrix(b, cT)
 show(aux)
 print("Resultado 2 (A + (B - Ct))")

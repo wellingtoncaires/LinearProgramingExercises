@@ -1,5 +1,5 @@
-from createdFunctions import create
-from createdFunctions import show
+from functions.createdFunctions import create
+from functions.createdFunctions import show
 
 
 print("Seja a matriz A = 3x4, tal que {i+j, se i = j  &  2i - 2j, i != j}. Qual o valor de a22 + a34?")
